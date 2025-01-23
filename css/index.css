@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 10px;
+}
+
+#datos-personales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9d9d9d;
+    width: 25%;
+    border-radius: 38px;
+}
+
+.pic-perfil{
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: solid 5px rgba(26, 151, 47, 1);
+}
+
+#proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9d9d9d;
+    width: 75%;
+    border-radius: 38px;
+}
+
+#wrapper-proyect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9d9d9d;
+}
+
+.title-proyects {
+    margin: auto;
+}
+
+.proyects-items{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 15px;
+    
+}
+
+.item-proyect{
+    border: solid 5px rgba(26, 151, 47, 1);
+    height: 130px;
+    width: 150px;
+    border-radius: 24px;
+}
