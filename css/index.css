@@ -1,17 +1,20 @@
 body {
     display: flex;
     flex-direction: row;
-    align-content: space-between;
-    gap: 10px;
+    align-content:center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #000;
 }
 
-#datos-personales{
+aside{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #9d9d9d;
-    width: 25%;
     border-radius: 38px;
+    order: -1;
+    flex:1
 }
 
 .pic-perfil{
@@ -23,20 +26,20 @@ body {
     border: solid 5px rgba(26, 151, 47, 1);
 }
 
-#proyectos{
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #9d9d9d;
-    width: 75%;
     border-radius: 38px;
+    order: 1;
+    flex: 3;
 }
 
 #wrapper-proyect{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #9d9d9d;
 }
 
 .title-proyects {
@@ -47,13 +50,46 @@ body {
     display: flex;
     flex-direction: row;
     padding: 10px;
-    gap: 15px;
-    
+    gap: 25px;
 }
 
 .item-proyect{
-    border: solid 5px rgba(26, 151, 47, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px rgba(26, 151, 47, 1);
     height: 130px;
     width: 150px;
     border-radius: 24px;
+    padding: 10px;
+    background-color: #000;
+    color: rgba(26, 151, 47, 1);
+}
+
+.carpinchomon-img,.copiadora-img,.siap-img {
+    width: 100px;
+    height: 100px;
+    border: solid 2px rgba(26, 151, 47, 1);
+    border-radius: 100%;
+}
+
+.skill-section{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    width: 25%;
+}
+
+.wrapper-skills{
+    display: flex;
+    flex-direction:row;
+    
+}
+
+.skill-item {
+    border: solid 2px rgba(26, 151, 47, 1);
+    padding: 10px;
+    margin: 5px;
 }
