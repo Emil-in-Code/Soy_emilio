@@ -3,7 +3,7 @@ body {
     flex-direction: row;
     align-content:center;
     justify-content: center;
-    background-color: #000;
+    background-color: #222;
     box-sizing: border-box;
     margin: 0;
     padding: 40px;
@@ -38,6 +38,11 @@ h1{
     font-size: 2rem;
 }
 
+h3{
+    color: #e6e6e6;
+    text-align: center;
+}
+
 .title-aside{
     background-color: #3232323d;
     border-radius: 5px;
@@ -59,8 +64,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e6e6e6;
-    border-radius: 38px;
+    background-color: #000;
+    border-radius: 8px;
+    border: solid 2px rgba(26, 151, 47, 1);
     order: 1;
     flex: 3;    
 }
@@ -74,6 +80,7 @@ main{
 
 .title-proyects {
     margin: auto;
+    color: #e6e6e6;
 }
 
 .wrapper-proyects{
@@ -91,7 +98,7 @@ main{
     border: solid 3px rgba(26, 151, 47, 1);
     height: 130px;
     width: 150px;
-    border-radius: 24px;
+    border-radius: 7px;
     padding: 0 20px 80px 20px;
     margin-top: 2rem;
     background-color: #000;
@@ -132,18 +139,32 @@ main{
  width: 76%;
 }
 
-.skill-item{
-    display: flex;
-    justify-content: center;
+.skill-box{
+   display: flex;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
     border: solid 2px rgba(26, 151, 47, 1);
-    padding: 20px;
+    border-radius: 7px;
+    padding: 0px 10px 10px 10px;
     margin: 5px;
-    border-radius:0 24px 24px 0;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-left: solid 7px rgba(26, 151, 47, 1);
+    background-color: rgba(41, 63, 45, 1);
+    width: 80px;
+    height: 90px;
+}
+
+.text-skills{
+    color: #e6e6e6;
+}
+
+#skills-to-learn{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-learns{
+    display: flex;
+    flex-direction: row;
 }
 
 .wrapper-cursos{
