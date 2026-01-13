@@ -1,155 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum</title>
-  <link rel="stylesheet" href="/css/index.css">
+  <title>Emilio Flor - Portfolio</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <meta name="description" content="Portfolio de Emilio Flor, Desarrollador Web Fullstack especializado en React, Node.js con trasfondo en marketing. Apasionado por crear soluciones escalables y eficientes. ¡Disponible para nuevos proyectos!" />
+  <meta name="keywords" content="<meta name="keywords" content="Desarrollador Web, Fullstack Developer, React, Node.js, JavaScript, Portfolio IT, Desarrollo de Software, Programador"/>
+  <meta name="author" content="Emilio Flor" />
+  <meta property="og:title" content="La Copiadora" />
+  <meta property="og:description" content="Portfolio IT" />
 </head>
 <body>
+  <div class="gradient-bg"></div>
+  
+  <div class="container">
+    <header>
+        <div class="logo">EF</div>
+        <nav>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#skills">Skills</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
-  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hola, soy <span class="gradient-text">Emilio Flor</span></h1>
+        <p>Desarrollador web fullstack con trasfondo en marketing Transformo ideas en experiencias digitales memorables.</p>
+        <div class="cta-buttons">
+            <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+            <a href="#contacto" class="btn btn-secondary">Contactar</a>
+        </div>
+      </div>
+      <div class="hero-image">
+          <div class="floating-card">
+              <img src="./assets/profile.jpeg" alt="Emilio" class="profile-img">
+              <div class="stat">
+                  <span class="stat-label">Experiencia</span>
+                  <span class="stat-value">Desarrollo y marketing</span>
+              </div>
+              <div class="stat">
+                  <span class="stat-label">Ubicación</span>
+                  <span class="stat-value">La Plata, AR</span>
+              </div>
+              <div class="stat">
+                  <span class="stat-label">Disponibilidad</span>
+                  <span class="stat-value">Open to work</span>
+              </div>
+          </div>
+      </div>
+    </section>
 
-    <h2 class="title-proyects">proyectos</h2>
+    <section class="projects" id="proyectos">
+        <h2 class="section-title">Proyectos <span class="gradient-text">Destacados</span></h2>
+        <div class="projects-grid">
 
-    <div id="container--cards__proyect">
-          
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./assets/carpincho.png" alt="Carcarpinchomon">
+              </div>
+                <div class="project-content">
+                    <h3 class="project-title">Carcarpinchomon</h3>
+                    <p class="project-desc">Juego desarrollado en Platzi</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
 
-      <div class="wrapper-proyects">
+            <div class="project-card">
+                <div class="project-image project-2">
+                  <img src="./assets/Logo de la copiadora.png" alt="La Copiadora"
+                  style="max-width: 100%; max-height: 100%; object-fit: contain; padding: 15px;">
+                </div>
                 
-        <div class="card-proyect">
-
-          <div class="logo">
-            <img src="/assets/carpincho.png" alt="Ilustración de carpinchomon" class="carpinchomon-img">
-          </div>
-                    
-          <div class="sub-item__proyect">
-            <p>
-              Carpinchomon.<br> realizado con html,css,js
-            </p>
-            <div class="btn-container">
-              <button class="btn-proyect">ver proyecto</button>
+                <div class="project-content">
+                    <h3 class="project-title">La Copiadora</h3>
+                    <p class="project-desc">Sitio web completo para negocio local con diseño responsive y optimizado.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Supabase</span>
+                    </div>
+                </div>
             </div>
 
-          </div>
-
-        </div>
-
-                
-
-        <div class="card-proyect">
-
-          <div class="logo">
-            <img src="/assets/Logo de la copiadora.png" alt="Logo de la copiadora" class="copiadora-img">
-          </div>
-
-          <div class="sub-item__proyect">
-
-            <p>
-              La Copiadora<br>Sitio web realizado con html,css,js.
-            </p>
-
-            <div class="btn-container">
-              <button class="btn-proyect">Ver proyecto</button>
+            <div class="project-card">
+                <div class="project-image project-3">
+                  <img src="./assets/siap.png" alt="Siap revestimientos"
+                  style="max-width: 100%; max-height: 100%; object-fit: contain; padding: 15px;">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Siap Landing</h3>
+                    <p class="project-desc">Landing page moderna desarrollada con Webflow para máximo impacto visual.</p>
+                    <div class="project-tags">
+                        <span class="tag">Webflow</span>
+                        <span class="tag">Design</span>
+                    </div>
+                </div>
             </div>
-                        
-          </div>
-
         </div>
+    </section>
 
-        <div class="card-proyect">
-                    
-          <div class="logo">
-            <img src="/assets/siap.png" alt="Logo Siap" class="siap-img">
-          </div>
-
-          <div class="sub-item__proyect">
-
-            <p>
-              Siap<br> Landing realizada con webflow
-            </p>
-
-            <div class="btn-container">
-              <button class="btn-proyect">Ver proyecto</button>
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills & <span class="gradient-text">Herramientas</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div style="font-size: 2.5rem;">💻</div>
+                <div class="skill-name">HTML</div>
             </div>
-
-          </div>
-
+            <div class="skill-card">
+                <div style="font-size: 2.5rem;">🎨</div>
+                <div class="skill-name">CSS</div>
+            </div>
+            <div class="skill-card">
+                <div style="font-size: 2.5rem;">⚡</div>
+                <div class="skill-name">JavaScript</div>
+            </div>
+            <div class="skill-card">
+                <div style="font-size: 2.5rem;">⚛️</div>
+                <div class="skill-name">React</div>
+            </div>
+            <div class="skill-card">
+                <div style="font-size: 2.5rem;">🐧</div>
+                <div class="skill-name">Linux</div>
+            </div>
+            <div class="skill-card">
+                <div style="font-size: 2.5rem;">🎯</div>
+                <div class="skill-name">Figma</div>
+            </div>
+            <div class="skill-card">
+                <div style="font-size: 2.5rem;">📊</div>
+                <div class="skill-name">Excel</div>
+            </div>
+            <div class="skill-card">
+                <div style="font-size: 2.5rem;">🌊</div>
+                <div class="skill-name">Webflow</div>
+            </div>
+            <div class="skill-card">
+                <div style="font-size: 2.5rem;">📱</div>
+                <div class="skill-name">Google Ads</div>
+            </div>
         </div>
-
-      </div>
-
-    </div>
-
-    <section id="skill-section">
-      <h3>Skills</h3>
-            
-      <div class="wrapper-skills">    
-        <div class="skill-box"><span class="text-skills">HTML</span></div>
-        <div class="skill-box"><span class="text-skills">CSS</span></div>
-        <div class="skill-box"><span class="text-skills">JS</span></div>
-        <div class="skill-box"><span class="text-skills">LINUX</span></div>
-        <div class="skill-box"><span class="text-skills">FIGMA</span></div>
-        <div class="skill-box"><span class="text-skills">EXCEL</span></div>
-        <div class="skill-box"><span class="text-skills">WEBFLOW</span></div>
-        <div class="skill-box"><span class="text-skills">Google <br> & <br>Meta Ads</span></div>
-      </div>
-
-      <div id="skills-to-learn">
-
-        <h3>learning goals</h3>
-        <div class="container-learns">
-          <div class="skill-box"><span class="text-skills">node.js</span></div>
-          <div class="skill-box"><span class="text-skills">sql</span></div>
-          <div class="skill-box"><span class="text-skills">git</span></div>
-        </div>
-
-      </div>
-            
     </section>
 
-    <section id="section-cursos">
-      <h3 class="title-cursos">Estudios</h3>
-           
-      <div class="wrapper-cursos"> 
-        <div class="cursos-item">Fundamentos de la programación - Platzi</div>
-        <div class="cursos-item">Curso Javascript - Soy Dalto</div>
-        <div class="cursos-item">Curso Html y Css - Soy Dalto</div>
-        <div class="cursos-item">LPIC-101 V.5.0 - Linux Professional Institue</div>
-        <div class="cursos-item">Marketing Digital - Google Activate</div>
-        <div class="cursos-item">Diseño web en webflow - NocodeHackers</div>
-      </div>
-
-    </section>
-
-    <section id="sobre-mi">
-      <div>
-        <h3 class="title-sobre__mi">Sobre mi</h3>
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, nesciunt facere. Aut hic similique dolores in quos laudantium. Eaque possimus deserunt tenetur animi saepe quisquam totam quaerat doloribus nam expedita!</p>
+    <section class="contact" id="contacto">
+        <h2 class="section-title">Hablemos de tu <span class="gradient-text">Próximo Proyecto</span></h2>
+        <div class="contact-grid">
+            <a href="mailto:tu@email.com" class="contact-item">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">📧</div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">Contactar</div>
+            </a>
+            <a href="tel:+549" class="contact-item">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">📱</div>
+                <div class="contact-label">Celular</div>
+                <div class="contact-value">Llamar</div>
+            </a>
+            <a href="https://github.com" target="_blank" class="contact-item">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">💻</div>
+                <div class="contact-label">Github</div>
+                <div class="contact-value">Ver código</div>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="contact-item">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">💼</div>
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value">Conectar</div>
+            </a>
         </div>
-      </div>
-
     </section>
 
-  </main>
+    <footer>
+        <p>&copy; 2026 Emilio Flor. Diseñado y desarrollado con pasión en La Plata, Argentina.</p>
+    </footer>
+  </div>
 
-       
-  <aside>
-
-    <img  src="/assets/profile.jpeg" alt="Profile Picture" class="pic-perfil">
-    <h1>Emilio Flor </h1>
-
-    <h2 class="title-aside">Marketer orientado al desarrollo web<br>y estudiante para admin linux.</h2>
-    <ul class="ul-contact">
-      <li>Mail</li>
-      <li>Celular</li>
-      <li>Github</li>
-      <li>Linkedin</li>
-      <li>La Plata - Buenos Aires</li>
-    </ul>
-
-  </aside>
-
+  <script src="./js/index.js"></script>
 </body>
 </html>
